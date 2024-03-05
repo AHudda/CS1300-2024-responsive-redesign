@@ -1,0 +1,68 @@
+#logoBar{
+    width: 30vw;
+    height: 100vh;
+  
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+  
+    font-family: Georgia, sans-serif;
+    color: aliceblue;
+    text-align: center;
+  }
+  
+  #siteLogo{
+    width: 100%;
+  }
+  
+  body {
+    display: flex;
+  }
+  
+  #staffGallery{
+    width: 70vw;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+  }
+  .galleryImage{
+    width: 100%;
+    height: auto;
+    height: 300px;
+  }
+  
+  .card {
+    background-color: antiquewhite;
+    border-radius: 5px;
+    height: min-content;
+    width: min-content;
+    margin: 5%;
+  }
+  
+  h4{
+    font-family: Courier;
+    color: black;
+    display: flex;
+    justify-content: center;
+  }
+  
+  
+  @media screen and (max-width: 600px) {
+    body{
+      flex-direction: column;
+      align-items: center;
+      display: flex;
+    }
+    #logoBar{
+      width:fit-content;
+      height:fit-content;
+      align-items: center;
+      flex-direction: column;
+      display: flex;
+    }
+  
+    #divider{
+      width: 90%;
+      height: 1%;
+    }
+  }

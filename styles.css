@@ -75,6 +75,7 @@ body {
 
     h2:hover{
         font-family: 'Inknut Antiqua Bold', serif;
+        cursor: default;
     }
   }
 
@@ -135,7 +136,7 @@ body {
     button{
         background-color: #CAB7B0;
         font-family: 'Rubik', serif;
-        font-size: 14px;
+        font-size: 18px;
         border: 2px solid #A78A7F9D;
         padding: 5px;
         margin: 5px;

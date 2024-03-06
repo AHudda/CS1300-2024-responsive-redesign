@@ -18,10 +18,9 @@ body {
 
 #headerBar{
     width: 100vw;
-    height: 12vh;
-
-    position: fixed;
-    top: 0;
+    height: 10vh;
+    margin-top: 20px;
+    margin-bottom: 25px;
     background-color:#8C1C13;
 
     display: flex;
@@ -33,7 +32,6 @@ body {
     h1{
         color: #E5E0DA;
         font-size: 34px;
-        display: flex;
         margin-bottom: -18px;
         margin-top: 0px;
     }
@@ -50,6 +48,52 @@ body {
   }
 
   #siteCrest{
-    margin-top: 15px;
+    margin-top: -10px;
     margin-bottom: -35px;
+    width: 53px;
+  }
+
+  #navigationBar{
+    width: 100vw;
+    height: 4vh;
+    background-color: #A78A7F;
+    border: 1px solid black;
+
+    font-family: 'Inknut Antiqua', serif;
+    font-size: 10px;
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  #pageContent{
+    font-family: 'Inknut Antiqua', serif;
+
+  }
+
+  #footerBar{
+    width: 100vw;
+    height: 3vh;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    background-color:#8C1C13;
+
+    font-family: 'Inknut Antiqua', serif;
+    font-size: 8px;
+    color: #E5E0DA;
+
+    display: flex;
+    align-items: center;
+
+    h3{
+        margin-left: 10px;
+    }
+  }
+
+  #currentPage{
+    text-decoration: underline;
   }

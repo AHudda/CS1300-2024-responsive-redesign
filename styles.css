@@ -1,68 +1,55 @@
-#logoBar{
-    width: 30vw;
-    height: 100vh;
-  
-    align-items: center;
+@font-face {
+    font-family: 'Inknut Antiqua';
+    font-weight: normal;
+    font-style: normal;
+    src: url('assets/inknut_antiqua/InknutAntiqua-Regular.ttf') format('truetype'); /* Specify the TTF font file */
+}
+@font-face {
+    font-family: 'Special Elite';
+    font-weight: normal;
+    font-style: normal;
+    src: url('assets/special_elite/SpecialElite-Regular.ttf') format('truetype'); /* Specify the TTF font file */
+}
+
+body {
+    background-color:#E5E0DA;
+    margin: 0;  
+}
+
+#headerBar{
+    width: 100vw;
+    height: 12vh;
+
+    position: fixed;
+    top: 0;
+    background-color:#8C1C13;
+
     display: flex;
     flex-direction: column;
-  
-    font-family: Georgia, sans-serif;
-    color: aliceblue;
-    text-align: center;
-  }
-  
-  #siteLogo{
-    width: 100%;
-  }
-  
-  body {
-    display: flex;
-  }
-  
-  #staffGallery{
-    width: 70vw;
-    display: flex;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-  }
-  .galleryImage{
-    width: 100%;
-    height: auto;
-    height: 300px;
-  }
-  
-  .card {
-    background-color: antiquewhite;
-    border-radius: 5px;
-    height: min-content;
-    width: min-content;
-    margin: 5%;
-  }
-  
-  h4{
-    font-family: Courier;
-    color: black;
-    display: flex;
+    align-items: center;
     justify-content: center;
+    font-family: 'Inknut Antiqua', serif;
+
+    h1{
+        color: #E5E0DA;
+        font-size: 34px;
+        display: flex;
+        margin-bottom: -18px;
+        margin-top: 0px;
+    }
+
+    h3{
+        background-color: #A78A7F;
+        color: black;
+        font-size: 12px;
+        margin: 0;
+        padding-left: 6px;
+        padding-right: 6px;
+        line-height: 2;
+    }
   }
-  
-  
-  @media screen and (max-width: 600px) {
-    body{
-      flex-direction: column;
-      align-items: center;
-      display: flex;
-    }
-    #logoBar{
-      width:fit-content;
-      height:fit-content;
-      align-items: center;
-      flex-direction: column;
-      display: flex;
-    }
-  
-    #divider{
-      width: 90%;
-      height: 1%;
-    }
+
+  #siteCrest{
+    margin-top: 15px;
+    margin-bottom: -35px;
   }

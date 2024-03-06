@@ -1,204 +1,284 @@
+
 @font-face {
-    font-family: 'Inknut Antiqua';
-    font-weight: normal;
-    font-style: normal;
-    src: url('assets/inknut_antiqua/InknutAntiqua-Regular.ttf') format('truetype');
+  font-family: 'Inknut Antiqua';
+  font-weight: normal;
+  font-style: normal;
+  src: url('assets/inknut_antiqua/InknutAntiqua-Regular.ttf') format('truetype');
 }
 @font-face {
-    font-family: 'Inknut Antiqua Bold';
-    font-weight: normal;
-    font-style: normal;
-    src: url('assets/inknut_antiqua/InknutAntiqua-Bold.ttf') format('truetype');
+  font-family: 'Inknut Antiqua Bold';
+  font-weight: normal;
+  font-style: normal;
+  src: url('assets/inknut_antiqua/InknutAntiqua-Bold.ttf') format('truetype');
 }
 @font-face {
-    font-family: 'Rubik';
-    font-weight: normal;
-    font-style: normal;
-    src: url('assets/rubik/static/Rubik-Regular.ttf') format('truetype');
+  font-family: 'Rubik';
+  font-weight: normal;
+  font-style: normal;
+  src: url('assets/rubik/static/Rubik-Regular.ttf') format('truetype');
 }
 
 body {
-    background-color:#E5E0DA;
-    margin: 0;  
+  background-color:#E5E0DA;
+  margin: 0;  
 }
 
 #headerBar{
-    width: 100vw;
-    height: 10vh;
-    margin-top: 20px;
-    margin-bottom: 25px;
-    background-color:#8C1C13;
+  width: 100vw;
+  height: 10vh;
+  margin-top: 20px;
+  margin-bottom: 25px;
+  background-color:#8C1C13;
 
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    font-family: 'Inknut Antiqua', serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Inknut Antiqua', serif;
 
-    h1{
-        color: #E5E0DA;
-        font-size: 34px;
-        margin-bottom: -18px;
-        margin-top: 0px;
-    }
-    h3{
-        background-color: #A78A7F;
-        color: black;
-        font-size: 12px;
-        margin: 0;
-        padding-left: 6px;
-        padding-right: 6px;
-        line-height: 2;
-    }
+  h1{
+      color: #E5E0DA;
+      font-size: 34px;
+      margin-bottom: -18px;
+      margin-top: 0px;
   }
-
-  #siteCrest{
-    margin-top: -10px;
-    margin-bottom: -35px;
-    width: 53px;
+  h3{
+      background-color: #A78A7F;
+      color: black;
+      font-size: 12px;
+      margin: 0;
+      padding-left: 6px;
+      padding-right: 6px;
+      line-height: 2;
   }
+}
 
-  #navigationBar{
-    width: 100vw;
-    height: 4vh;
-    margin-bottom: 10px;
-    background-color: #A78A7F;
-    border: 1px solid black;
+#siteCrest{
+  margin-top: -10px;
+  margin-bottom: -35px;
+  width: 53px;
+}
 
-    font-family: 'Inknut Antiqua', serif;
-    font-size: 10px;
-    
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
+#navigationBar{
+  width: 100vw;
+  height: 4vh;
+  margin-bottom: 5px;
+  background-color: #A78A7F;
+  border: 1px solid black;
 
-    h2:hover{
-        font-family: 'Inknut Antiqua Bold', serif;
-        cursor: default;
-    }
-  }
-
-  #currentPage{
-    text-decoration: underline;
-  }
-
-  #pageContent{
-    width: 100vw;
-    height: 75vh;
-    background-color: #84cdb4;
-  }
-
-  #pageContentTopRow{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    justify-content: center;
-  }
+  font-family: 'Inknut Antiqua', serif;
+  font-size: 10px;
   
-  #calendar{
-    color: black;
-    width: 50vw;
-    height: 30vh;
-    padding: 10px;
-    background-color: #bd84cd;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+
+  h2:hover{
+      font-family: 'Inknut Antiqua Bold', serif;
+      cursor: default;
   }
+}
 
-  .divider {
-    width: 2px;
-    background-color: black;
+#currentPage{
+  text-decoration: underline;
+}
+
+#pageContent{
+  width: 100vw;
+  height: 75vh;
+}
+
+#pageContentTopRow{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  justify-content: center;
+}
+
+#calendar{
+  color: black;
+  width: 50vw;
+  height: 30vh;
+  padding: 10px;
+  background-color: rgba(178, 211, 158, 0.616);
+
+  h2{
+    margin-left: 10px;
   }
+}
 
-  #quickAccess{
-    width: 50vw;
-    height: 30vh;
-    padding: 10px;
-    color: black;
-    background-color: #cd84c6;
+#calendarOrganization{
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+  justify-content: space-between;
+  justify-content: space-around;
+  width: 50vw;
+  height: 13vw;
+}
 
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.calendarMeetingTitles{
+  margin: 0px;
+  background-color: rgba(209, 175, 227, 0.616);
 
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+
+  h4{
+      margin-bottom: -15px;
+      margin-right: 100px;
   }
-
-  #allButtonGroups{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-  }
-
-  .buttonGroup{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
-    button{
-        background-color: #CAB7B0;
-        font-family: 'Rubik', serif;
-        font-size: 18px;
-        border: 2px solid #A78A7F9D;
-        padding: 5px;
-        margin: 5px;
-    }
-
-    button:hover{
-        border: 2px solid black;
-    }
-  }
-
-  #mainImage{
-    width: 150px;
-    height: auto;
-  }
-
-  #aboutUs{
-    width: 100vw;
-    height: 45vh;
-    color:black;
-    background-color: #9784cd;
-
-    h2{
-        padding-left: 10px;
-        padding-right: 10px;
-    }
-
-    p{
-        padding-left: 10px;
-        padding-right: 10px;
-    }
+  h5{
+    margin-right: 100px;
+    margin-bottom:-5px;
 
   }
+}
+.calendarMeetingDates{
+  margin: 0px;
+  margin-left: 35px;
+  background-color: rgba(227, 175, 215, 0.616);
 
-  #footerBar{
-    width: 100vw;
-    height: 3vh;
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    background-color:#8C1C13;
+  h5{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      background-color: #CAB7B0;
+      margin: 0px;
+      margin-top: 10px;
+      margin-right: 90px;
+      border-radius: 8px;
+      width: 50px;
+      height: 50px;
+  }
+}
 
-    font-family: 'Inknut Antiqua', serif;
-    font-size: 8px;
-    color: #E5E0DA;
+.divider {
+  margin-top: 10px;
+  width: 2px;
+  background-color: black;
+}
 
-    display: flex;
-    align-items: center;
+#quickAccess{
+  width: 50vw;
+  height: 30vh;
+  padding: 10px;
+  color: black;
+  background-color: rgba(185, 193, 226, 0.616);
 
-    h3{
-        margin-left: 10px;
-    }
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#allButtonGroups{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color: rgba(204, 204, 154, 0.616);
+}
+
+.buttonGroup{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  button{
+      background-color: #CAB7B0;
+      font-family: 'Rubik', serif;
+      font-size: 18px;
+      border: 2px solid #A78A7F9D;
+      padding: 5px;
+      margin: 3px;
   }
-  .subHeaders{
-    font-family: 'Inknut Antiqua', serif;
-    font-size: 22px;
-    margin: 0;
+
+  button:hover{
+      border: 2px solid black;
   }
-  .bodyText{
-    font-family: 'Rubik', serif;
-    font-size: 18px;
+}
+
+#mainImage{
+  width: 210px;
+  height: auto;
+}
+
+#aboutUs{
+  width: 100vw;
+  height: 25vh;
+  color:black;
+  background-color: rgba(189, 138, 150, 0.616);
+  margin-top: 10px;
+
+  h2{
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-left: 10px;
   }
-  .subBodyText{
-    font-family: 'Rubik', serif;
-    font-size: 16px;
+
+  p{
+    margin-top: -1px;
+    margin-left: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
   }
+}
+
+#gallery{
+  width: 100vw;
+  height: 18vh;
+  margin-top: -10px;
+  background-color: rgba(162, 163, 194, 0.616);
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.galleryImage{
+  width: auto;
+  height: 125px;
+}
+
+#footerBar{
+  width: 100vw;
+  height: 3vh;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  background-color:#8C1C13;
+
+  font-family: 'Inknut Antiqua', serif;
+  font-size: 8px;
+  color: #E5E0DA;
+
+  display: flex;
+  align-items: center;
+
+  h3{
+      margin-left: 10px;
+  }
+}
+
+.subHeaders{
+  font-family: 'Inknut Antiqua', serif;
+  font-size: 22px;
+  margin: 0;
+}
+.bodyText{
+  font-family: 'Rubik', serif;
+  font-size: 18px;
+}
+.subBodyText{
+  font-family: 'Rubik', serif;
+  font-size: 16px;
+}
+.subSubBodyText{
+  font-family: 'Rubik', serif;
+  font-size: 13px;
+}
+

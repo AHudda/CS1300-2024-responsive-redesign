@@ -90,6 +90,8 @@ body {
 }
 
 #pageContentTopRow{
+  width: 100%;
+  height: 45%;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -98,8 +100,8 @@ body {
 
 #calendar{
   color: black;
-  width: 50vw;
-  height: 30vh;
+  width: 50%;
+  height: 90%;
   padding: 10px;
   background-color: rgba(178, 211, 158, 0.616);
 
@@ -114,11 +116,14 @@ body {
   justify-content: center;
   justify-content: space-between;
   justify-content: space-around;
-  width: 50vw;
-  height: 13vw;
+  background-color:#e186659d;
+  width: 100%;
+  height: 80%;
 }
 
 .calendarMeetingTitles{
+  width: 75%;
+  height: 100%;
   margin: 0px;
   background-color: rgba(209, 175, 227, 0.616);
 
@@ -128,15 +133,16 @@ body {
 
   h4{
       margin-bottom: -15px;
-      margin-right: 80px;
+      margin-right: 30px;
   }
   h5{
-    margin-right: 80px;
+    margin-right: 30px;
     margin-bottom:-5px;
-
   }
 }
 .calendarMeetingDates{
+  width: 10%;
+  height: 100%;
   margin: 0px;
   margin-left: 35px;
   background-color: rgba(227, 175, 215, 0.616);
@@ -158,14 +164,15 @@ body {
 }
 
 .divider {
-  margin-top: 10px;
+  margin-top: 5px;
   width: 2px;
+  height: 95%;
   background-color: black;
 }
 
 #quickAccess{
-  width: 50vw;
-  height: 30vh;
+  width: 50%;
+  height: 90%;
   padding: 10px;
   color: black;
   background-color: rgba(185, 193, 226, 0.616);
@@ -206,9 +213,21 @@ body {
   height: auto;
 }
 
+#hiddenMainImage{
+  display: flex;
+  width: 40%;
+  height: auto;
+}
+
+#hiddenMainImageContainer{
+  display: none;
+  width: 100%;
+  height: 20%;
+}
+
 #aboutUs{
-  width: 100vw;
-  height: 25vh;
+  width: 100%;
+  height: 35%;
   color:black;
   background-color: rgba(189, 138, 150, 0.616);
   margin-top: 10px;
@@ -228,8 +247,8 @@ body {
 }
 
 #gallery{
-  width: 100vw;
-  height: 18vh;
+  width: 100%;
+  height: 20%;
   margin-top: -10px;
   background-color: rgba(162, 163, 194, 0.616);
 
@@ -237,11 +256,13 @@ body {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  overflow: hidden;
 }
 
 .galleryImage{
   width: auto;
-  height: 125px;
+  height: 90%;
+  padding: 2px;
 }
 
 #footerBar{
@@ -269,10 +290,7 @@ body {
   font-size: 22px;
   margin: 0;
 }
-.bodyText{
-  font-family: 'Rubik', serif;
-  font-size: 18px;
-}
+
 .subBodyText{
   font-family: 'Rubik', serif;
   font-size: 16px;
@@ -280,5 +298,83 @@ body {
 .subSubBodyText{
   font-family: 'Rubik', serif;
   font-size: 13px;
+}
+
+
+
+
+
+@media screen and (min-width: 1160px) and (max-width: 1270px){
+  .subBodyText{
+    font-size: 13px;
+  }
+  .subSubBodyText{
+    font-size: 10px;
+  }
+}
+
+/* IPad Screen */
+@media screen and (min-width: 768px) and (max-width: 1024px){
+  #pageContentTopRow{
+    height: 35%;
+  }
+  #calendar{
+    width: 90%;
+  }
+  #quickAccess{
+    width: 30%;
+  }
+  #calendarOrganization{
+    height: 75%;
+  }
+  .calendarMeetingTitles{
+    h5{
+      margin-bottom: 15px;
+    }
+  }
+  .buttonGroup{
+    button{
+      font-size: 15px;
+      margin: 7px;
+    }
+  }
+  #mainImage{
+    display: none;
+  }
+  #hiddenMainImageContainer{
+    display: flex;
+    justify-content: center;
+  }
+  #allButtonGroups{
+    flex-direction: column;
+  }
+  #aboutUs{
+    height: 25%;
+  }
+  .galleryImage{
+    height: 50%; 
+  }
+  .subBodyText{
+    font-size: 13px;
+  }
+  .subSubBodyText{
+    font-size: 10px;
+  }
+}
+
+/* IPhone Screen */
+@media screen and (max-width: 767px) {
+  #mainImage{
+    display: block;
+    width: auto;
+    height: 100px;
+  }
+  #hiddenMainImageContainer{
+    display: none;
+  }
+  #pageContentTopRow{
+    flex-direction: column;
+    align-items: center;
+  }
 }
 

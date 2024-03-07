@@ -103,7 +103,6 @@ body {
   width: 50%;
   height: 90%;
   padding: 10px;
-  background-color: rgba(178, 211, 158, 0.616);
 
   h2{
     margin-left: 10px;
@@ -116,7 +115,6 @@ body {
   justify-content: center;
   justify-content: space-between;
   justify-content: space-around;
-  background-color:#e186659d;
   width: 100%;
   height: 80%;
 }
@@ -125,7 +123,6 @@ body {
   width: 75%;
   height: 100%;
   margin: 0px;
-  background-color: rgba(209, 175, 227, 0.616);
 
   display: flex;
   flex-direction: column;
@@ -145,7 +142,6 @@ body {
   height: 100%;
   margin: 0px;
   margin-left: 35px;
-  background-color: rgba(227, 175, 215, 0.616);
 
   h5{
       display: flex;
@@ -175,7 +171,6 @@ body {
   height: 90%;
   padding: 10px;
   color: black;
-  background-color: rgba(185, 193, 226, 0.616);
 
   display: flex;
   flex-direction: column;
@@ -186,7 +181,6 @@ body {
   display: flex;
   flex-direction: row;
   align-items: center;
-  background-color: rgba(204, 204, 154, 0.616);
 }
 
 .buttonGroup{
@@ -229,7 +223,6 @@ body {
   width: 100%;
   height: 35%;
   color:black;
-  background-color: rgba(189, 138, 150, 0.616);
   margin-top: 10px;
 
   h2{
@@ -250,7 +243,6 @@ body {
   width: 100%;
   height: 20%;
   margin-top: -10px;
-  background-color: rgba(162, 163, 194, 0.616);
 
   display: flex;
   flex-direction: row;
@@ -290,7 +282,6 @@ body {
   font-size: 22px;
   margin: 0;
 }
-
 .subBodyText{
   font-family: 'Rubik', serif;
   font-size: 16px;
@@ -300,8 +291,90 @@ body {
   font-size: 13px;
 }
 
+/* Even Bigger Screen */
 
+/* Slightly Bigger Screen */
+@media screen and (min-width: 2001px) and (max-width: 3000px){
+  #headerBar{
+    background-color:blue;
+    h1{
+      font-size: 38px;
+    }
+    h3{
+      font-size: 16px;
+    }
+  }
+  #navigationBar{
+    h2{
+      font-size: 22px;
+    }
+  }
+  .calendarMeetingDates{
+    h5{
+      margin-top: 10px;
+      width: 70px;
+      height: 70px;
+    }
+  }
+  .calendarMeetingTitles{
+    h5{
+      margin-top: 15px;
+      margin-bottom: -9px;
+      margin-right: 0px;
+    }
+  }
+  .subHeaders{
+    font-size: 24px;
+    margin: 0;
+  }
+  .subBodyText{
+    font-size: 24px;
+  }
+  .subSubBodyText{
+    font-size: 18px;
+  }
+}
 
+/* Mid Screen */
+@media screen and (min-width: 1500px) and (max-width: 2000px){
+  #headerBar{
+    background-color: orange;
+    h1{
+      font-size: 36px;
+    }
+    h3{
+      font-size: 14px;
+    }
+  }
+  #navigationBar{
+    h2{
+      font-size: 20px;
+    }
+  }
+  .calendarMeetingDates{
+    h5{
+      margin-top: 10px;
+      width: 65px;
+      height: 65px;
+    }
+  }
+  .calendarMeetingTitles{
+    h5{
+      margin-bottom: -9px;
+      margin-right: 0px;
+    }
+  }
+  .subHeaders{
+    font-size: 22px;
+    margin: 0;
+  }
+  .subBodyText{
+    font-size: 18.5px;
+  }
+  .subSubBodyText{
+    font-size: 16px;
+  }
+}
 
 /* IPad Screen */
 @media screen and (min-width: 768px) and (max-width: 1024px){

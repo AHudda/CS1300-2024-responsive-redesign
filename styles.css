@@ -474,6 +474,12 @@ body {
   }
 }
 
+@media screen and (min-width:768px) and (min-height: 667){
+  #calendar{
+    background-color: blue;
+  }
+}
+
 /* IPhone Screen */
 @media screen and (max-width: 767px) {
   #headerBar{

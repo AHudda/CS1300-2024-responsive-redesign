@@ -92,6 +92,7 @@ body {
   width: 100vw;
   height: 75vh;
 }
+
 /* Top row: calendar & quick access */
 #pageContentTopRow{
   width: 100%;
@@ -142,6 +143,7 @@ body {
     margin-bottom:-5px;
   }
 }
+
 .calendarMeetingDates{
   width: 10%;
   height: 100%;

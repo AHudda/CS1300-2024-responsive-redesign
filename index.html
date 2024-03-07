@@ -18,25 +18,26 @@
 
       <!-- header bar-->   
       <div id="headerBar">
-        <img id="siteCrest" alt="crest site logo" src="./assets/crest.png"/>
+        <img id="siteCrest" alt="site logo" src="./assets/crest.png" aria-label="site logo image"/>
         <h1>Foxhall Community Association</h1>
         <h3>ESTABLISHED 1928</h3>
       </div>
 
       <!-- navigation bar--> 
       <div id="navigationBar">
-        <h2 id="currentPage">Home </h2>
-        <h2>FCCA</h2>
-        <h2>Contacts</h2>
-        <h2>Events</h2>
-        <h2>Newsletters</h2>
-        <h2>Initiatives</h2>
-        <h2>History</h2>
+        <h2 id="currentPage" aria-label="Current Page: Home">Home </h2>
+        <h2 aria-label="Navigate to: FCCA">FCCA</h2>
+        <h2 aria-label="Navigate to: Contacts">Contacts</h2>
+        <h2 aria-label="Navigate to: Events">Events</h2>
+        <h2 aria-label="Navigate to: Newsletters">Newsletters</h2>
+        <h2 aria-label="Navigate to: Initiatives">Initiatives</h2>
+        <h2 aria-label="Navigate to: History">History</h2>
       </div>
 
-      <!-- page content (calendar, quick access, about us)--> 
+      <!-- page content (calendar, quick access, about us, gallery)--> 
       <div id="pageContent">
 
+        <!-- div for calendar & quick access--> 
         <div id="pageContentTopRow">
             <div id="calendar">
                 <h2 class="subHeaders">Calendar</h2>
@@ -57,24 +58,25 @@
                     </div>
                 </div>
             </div>
-            <div class="divider"></div>
+            <div class="divider" aria-hidden="true"></div>
             <div id="quickAccess">
-                <img id="mainImage" alt="image of foxhall village" src="./assets/foxhall.jpg">
+                <img id="mainImage" alt="foxhall village homes" src="./assets/foxhall.jpg" aria-label="foxhall village home image">
                 <h2 class="subHeaders">Quick Access</h2>
                 <div id="allButtonGroups">
                     <div class="buttonGroup">
-                        <button>Donate to the FCAA</button>
-                        <button>Join the FCCA Now</button>
+                        <button aria-label="Donate to the FCAA">Donate to the FCAA</button>
+                        <button aria-label="Join the FCCA Now">Join the FCCA Now</button>
                     </div>
                     <div class="buttonGroup">
-                        <button>Current Newsletter</button>
-                        <button>Neighborhood Map</button>
+                        <button aria-label="Current Newsletter">Current Newsletter</button>
+                        <button aria-label="Neighborhood Map">Neighborhood Map</button>
                     </div>
                 </div>
             </div>
         </div>
+        <!-- image is hidden until the IPad Screen--> 
         <div id="hiddenMainImageContainer">
-          <img id="hiddenMainImage" alt="image of foxhall village" src="./assets/foxhall.jpg">
+          <img id="hiddenMainImage" alt="foxhall village homes" src="./assets/foxhall.jpg" aria-label="foxhall village home image">
         </div>
         <div id="aboutUs">
             <h2 class="subHeaders">About Us</h2>
@@ -82,18 +84,18 @@
             <p class="subSubBodyText">Join us. Get Involved. Welcome.</p>
         </div>
         <div id="gallery">
-            <img alt="gallery left pointing arrow" src="./assets/leftArrow.png">
-            <img class="galleryImage" alt="image of historic bus" src="./assets/bus.jpg">
-            <img class="galleryImage" alt="image of colony hill" src="./assets/colonyHill.jpg">
-            <img class="galleryImage" alt="image of landscaper" src="./assets/landscaper.jpg">
-            <img class="galleryImage" alt="image of maypole" src="./assets/maypole.jpg">
-            <img class="galleryImage" alt="image of q street" src="./assets/qStreet.jpg">
-            <img class="galleryImage" alt="image of village circle" src="./assets/villageCircle.jpg">
-            <img alt="gallery right pointing arrow" src="./assets/rightArrow.png">
+            <img alt="gallery left pointing arrow" src="./assets/leftArrow.png" aria-label="gallery left pointing arrow image">
+            <img class="galleryImage" alt="historic bus" src="./assets/bus.jpg" aria-label="gallery image of historic bus">
+            <img class="galleryImage" alt="historic colony hill" src="./assets/colonyHill.jpg" aria-label="gallery image of historic colony hill">
+            <img class="galleryImage" alt="historic landscaper" src="./assets/landscaper.jpg" aria-label="gallery image of historic landscaper">
+            <img class="galleryImage" alt="historic maypole" src="./assets/maypole.jpg" aria-label="gallery image of historic maypole">
+            <img class="galleryImage" alt="historic q street" src="./assets/qStreet.jpg" aria-label="gallery image of q street">
+            <img class="galleryImage" alt="historic village circle" src="./assets/villageCircle.jpg" aria-label="gallery image of historic village circle">
+            <img alt="gallery right pointing arrow" src="./assets/rightArrow.png" aria-label="gallery right pointing arrow image">
         </div>
       </div>
 
-      <!-- page content (calendar, quick access, about us)--> 
+      <!-- footer bar --> 
       <div id="footerBar">
         <h3>Copyright @2024 Foxhall Community Citizens Association</h3>
       </div>
